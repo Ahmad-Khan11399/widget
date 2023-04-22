@@ -1,38 +1,142 @@
+body {
+  font-family: "McLaren", cursive;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
+  color: #FFEBEB;
+  padding: 0.75%;
+}
+
+.weather {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  color:#10738E;
+  width: 40%;
+  position: absolute;
+  top: 10%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.curr-menu {
+  text-align: center;
+  position: absolute;
+  top: 6%;
+  left: 24%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  font-size: 1.7rem;
+  color: #33BFE6;
+}
+
+.currency {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  color: #9BE0F3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  padding: 12px;
+}
+
+.currency select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.currency select:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.currency option {
+  font-size: 16px;
+}
+
+.currency div {
+  margin-top: 10px;
+}
+
+.currency h3 {
+  font-size: 1.8rem;
+  margin: auto;
+
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.currency p span {
+  font-weight: bold;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  text-align: center;
+  background-image: url("./intro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.big-heading {
+  padding: 20px;
+  margin-top: 0px;
+}
+
+.button {
+  background-color: transparent;
+  border-color: transparent;
+  min-height: 15vh;
+  min-width: 35vh;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  font-weight: bolder;
+  font-family: "McLaren", cursive;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+option {
+  font-size: 1rem;
+}
+
+/* Styling for the selected option */
+option:checked {
+  background-color: #ccc;
+}
+
+/* Styling for the components */
+.component {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
